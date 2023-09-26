@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f7fb;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.container {
+    background: #000;
+    border-radius: 20px;
+    height: 430px;
+    width: 300px;
+    max-width: 100%;
+    color: #ffff;
+    padding: 20px;
+    box-shadow: 4px 4px 4px #4f4d4d;
+}
+
+.result {
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.result p {
+    text-align: right;
+    font-size: 35px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+        'as plus-minus percent division'
+        'seven eight nine multi'
+        'four five six minus'
+        'one two three plus'
+        'zero zero dot equal';
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4f4d4d;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(120%)
+}
+
+.btn:active {
+    filter: brightness(90%)
+}
+
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+}
+
+.bg-grey {
+    background-color: #a6a6a6;
+}
+
+.bg-orange {
+    background-color: #ff9501;
+}
